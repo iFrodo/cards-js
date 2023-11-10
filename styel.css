@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 950px;
     margin: 0 auto;
     display: flex;
@@ -6,13 +6,13 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    gap:25px
+    gap: 25px
 }
 
 
 
 
-.card{
+.card {
     padding: 25px 50px;
     max-width: 473px;
     display: flex;
@@ -22,34 +22,48 @@
     background: #FFF;
 
 }
-.card-block-0{
+
+.card-block-0 {
     width: 376px;
     border-radius: 19px;
-    background: linear-gradient(#9C2CF3 ,#3A6FF9);
+    background: linear-gradient(#9C2CF3, #3A6FF9);
 }
-.card-title-0{
-    padding: 28px  24px 18px;
+
+.card-title-0 {
+    padding: 28px 24px 18px;
 }
-.card-balance-0{
+
+.card-balance-0 {
     padding: 0px 24px 5px;
 }
-.card-money-0{
+
+.card-money-0 {
     padding: 0px 24px 40px;
 }
-.card-info-0{
+
+.card-info-0 {
     display: flex;
     justify-content: space-between;
 }
-.card-number-0{
+
+.card-number-0 {
     padding: 0px 24px 21px;
 }
-.card-expiration-0{
+
+.card-expiration-0 {
     padding: 0px 22px 21px;
 }
+
+.card-logo-0 {
+    position: absolute;
+    top: 51px;
+    left: 420px;
+}
+
 .income {
     color: green;
-  }
+}
+
 .outcome {
     color: red;
-  }
-
+}

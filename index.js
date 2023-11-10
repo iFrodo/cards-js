@@ -87,15 +87,17 @@ for (let i = 0; i < cards.length; i++) {
 
   document.write('<div class="card">')
   document.write(`<div class="card-block-${i}">`)
-  
+
   document.write(`<h3 class=card-title-${i}>`, cards[i].type, ' card ', cards[i].networkType, '</h3>')
   document.write(`<p class=card-balance-${i}>`, 'Current Balance', '</p>',`<p class=card-money-${i}>`,cards[i].balance, '</p>')
   document.write(`<div class=card-info-${i}>`)
+  document.write(` <img  class=card-logo-${i} src="./mastercard_logo.png" >`)
   document.write(`<p class=card-number-${i}>`, cards[i].number, '</p>')
   document.write(`<p class=card-expiration-${i}>`, cards[i].expirationYear, '.', cards[i].expirationMonth, '</p>')
   document.write('</div>')
-  document.write('<div class="card-img">')
-  document.write('</div>')
+
+
+
   document.write('</div>')
 
   document.write("<h2>", "History Transaction", "</h2>");
