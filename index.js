@@ -86,12 +86,12 @@ document.write('<div class="container">')
 for (let i = 0; i < cards.length; i++) {
 
   document.write('<div class="card">')
-  document.write(`<div class="card-block">`)
+  document.write(`<div class="card-block-${i}">`)
 
   document.write(`<h3 class=card-title>`, cards[i].type, ' Card ',  '</h3>')
   document.write(`<p class=card-balance>`, 'Current Balance', '</p>',`<p class=card-money>`,cards[i].balance, '</p>')
   document.write(`<div class=card-info>`)
-  document.write(` <img  class=card-logo src="./mastercard_logo.png" >`)
+  document.write(`<img class=card-logo-${i} src="./mastercard_logo.png" >`)
   document.write(`<p class=card-number>`, cards[i].number, '</p>')
   document.write(`<p class=card-expiration>`, cards[i].expirationYear, '.', cards[i].expirationMonth, '</p>')
   document.write('</div>')
@@ -100,12 +100,13 @@ for (let i = 0; i < cards.length; i++) {
 
   document.write('</div>')
 
-  document.write("<h2>", "History Transaction", "</h2>");
-  document.write('<ul>')
+  document.write('<div class=transaction-block>')
+  document.write("<h2 class='transaction-title'}>", "History Transaction", "</h2>");
+  document.write('<ul style=transaction-list>')
 
   for (let j = 0; j < cards[i].transactions.length; j++) {
     let cssClass = cards[i].transactions[j].amount > 0 ? "income" : "outcome";
-    document.write("<li>",
+    document.write("<li class=transaction-item>",
     cards[i].transactions[j].title,
      ", ",
     cards[i].transactions[j].date,
@@ -116,6 +117,7 @@ for (let i = 0; i < cards.length; i++) {
         "</li>");
 
   }
+  document.write('</div>')
   document.write('</div>')
   
   if (cards[i].currencyType === 1) {
