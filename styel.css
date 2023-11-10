@@ -27,6 +27,25 @@
     border-radius: 19px;
     background: linear-gradient(#9C2CF3 ,#3A6FF9);
 }
+.card-title-0{
+    padding: 28px  24px 18px;
+}
+.card-balance-0{
+    padding: 0px 24px 5px;
+}
+.card-money-0{
+    padding: 0px 24px 40px;
+}
+.card-info-0{
+    display: flex;
+    justify-content: space-between;
+}
+.card-number-0{
+    padding: 0px 24px 21px;
+}
+.card-expiration-0{
+    padding: 0px 22px 21px;
+}
 .income {
     color: green;
   }
