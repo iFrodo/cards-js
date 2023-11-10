@@ -1,9 +1,9 @@
 let cards = [
   card1 = {
-    type: 'debit',
-    networkType: 'visa',
+    type: 'Debit',
+    networkType: 'mastercard',
     currencyType: 1,
-    balance: 5750.53,
+    balance: '$5.750,53',
     number: 5282345678901289,
     expirationYear: 2025,
     expirationMonth: 9,
@@ -29,10 +29,10 @@ let cards = [
 
 
   card2 = {
-    type: 'credit',
+    type: 'Credit',
     networkType: 'visa',
     currencyType: 2,
-    balance: 1343.53,
+    balance: '€1.343,53',
     number: 9232654321012032,
     expirationYear: 2026,
     expirationMonth: 4,
@@ -56,10 +56,10 @@ let cards = [
 
   },
   card3 = {
-    type: 'debit',
+    type: 'Debit',
     networkType: 'master card',
     currencyType: 3,
-    balance: 3263.65,
+    balance: '£3.263,65',
     number: 5543259349582930,
     expirationYear: 2028,
     expirationMonth: 3,
@@ -86,14 +86,14 @@ document.write('<div class="container">')
 for (let i = 0; i < cards.length; i++) {
 
   document.write('<div class="card">')
-  document.write(`<div class="card-block-${i}">`)
+  document.write(`<div class="card-block">`)
 
-  document.write(`<h3 class=card-title-${i}>`, cards[i].type, ' card ', cards[i].networkType, '</h3>')
-  document.write(`<p class=card-balance-${i}>`, 'Current Balance', '</p>',`<p class=card-money-${i}>`,cards[i].balance, '</p>')
-  document.write(`<div class=card-info-${i}>`)
-  document.write(` <img  class=card-logo-${i} src="./mastercard_logo.png" >`)
-  document.write(`<p class=card-number-${i}>`, cards[i].number, '</p>')
-  document.write(`<p class=card-expiration-${i}>`, cards[i].expirationYear, '.', cards[i].expirationMonth, '</p>')
+  document.write(`<h3 class=card-title>`, cards[i].type, ' Card ',  '</h3>')
+  document.write(`<p class=card-balance>`, 'Current Balance', '</p>',`<p class=card-money>`,cards[i].balance, '</p>')
+  document.write(`<div class=card-info>`)
+  document.write(` <img  class=card-logo src="./mastercard_logo.png" >`)
+  document.write(`<p class=card-number>`, cards[i].number, '</p>')
+  document.write(`<p class=card-expiration>`, cards[i].expirationYear, '.', cards[i].expirationMonth, '</p>')
   document.write('</div>')
 
 
