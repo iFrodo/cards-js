@@ -123,12 +123,15 @@ flex-direction: column;
 }
 .transaction-item{
 display: flex;
+
 }
 
 .income {
+    text-wrap: nowrap;
     color: green;
 }
 
 .outcome {
+    text-wrap: nowrap;
     color: red;
 }
