@@ -2,6 +2,11 @@ const cards = getCards()
 let user = getCurrentUser()
 renderHeader(user.name)
 renderCard(cards)
+let date =  new Date() 
+let year = date.getFullYear()
+let month = date.getMonth() +1
+let ecsad = date.setUTCMonth()
+date = `${year}` +' ' +`${month }`
 
 function getCards() {
   let cards = [
@@ -124,7 +129,6 @@ function renderCard(cards) {
   document.write('</ul>')
   document.write('</div>');
 }
-
 function renderTransactions(transactions, currencyType) {
   if (currencyType === 1) {
     renderTransactionItem(transactions, '$')
@@ -136,7 +140,6 @@ function renderTransactions(transactions, currencyType) {
 
 
 }
-
 function getCurrentUser() {
   return {
     name: getUserName(),
@@ -173,3 +176,5 @@ function renderTransactionItem(transactions, currencyType) {
       "</li>");
   }
 }
+
+
