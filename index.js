@@ -1,3 +1,48 @@
+
+let container = document.createElement('div')
+let card = document.createElement('div')
+let cardBlock = document.createElement('div')
+let cardTransactionBlock = document.createElement('div')
+let cardTitle = document.createElement('h3')
+let cardBalance = document.createElement('p')
+let cardMoney = document.createElement('p')
+let cardInfo = document.createElement('div')
+let cardLogo = document.createElement('img')
+let cardNumber = document.createElement('p')
+let cardExpiration = document.createElement('p')
+
+container.classList.add('container')
+card.classList.add('card')
+cardBlock.classList.add('card-block')
+cardTransactionBlock.classList.add('transaction-block')
+cardTitle.classList.add('card-title')
+cardBalance.classList.add('card-balance')
+cardMoney.classList.add('card-money')
+cardInfo.classList.add('card-info')
+cardLogo.classList.add('card-logo')
+cardNumber.classList.add('card-number')
+cardExpiration.classList.add('card-expiration')
+
+
+document.querySelector('.root').appendChild(container)
+document.querySelector('.container').appendChild(card)
+document.querySelector('.card').appendChild(cardBlock)
+document.querySelector('.card').appendChild(cardTransactionBlock)
+document.querySelector('.card-block').appendChild(cardTitle)
+document.querySelector('.card-block').appendChild(cardBalance)
+document.querySelector('.card-block').appendChild(cardMoney)
+document.querySelector('.card-block').appendChild(cardInfo)
+document.querySelector('.card-info').appendChild(cardLogo)
+document.querySelector('.card-info').appendChild(cardNumber)
+document.querySelector('.card-info').appendChild(cardExpiration)
+
+
+
+
+
+
+
+
 const cards = getCards()
 let user = getCurrentUser()
 renderHeader(user.name)
@@ -7,6 +52,8 @@ let year = date.getFullYear()
 let month = date.getMonth() +1
 let ecsad = date.setUTCMonth()
 date = `${year}` +' ' +`${month }`
+
+
 
 function getCards() {
   let cards = [
@@ -97,7 +144,7 @@ function getCards() {
 }
 function renderCard(cards) {
   //создание общего контейнера в котором лежат все карты
-  document.write('<div class="container">')
+
   for (let i = 0; i < cards.length; i++) {
     //генерация разметки для каждой карты и подставление данных из входящего массива
     document.write('<div class="card">')
