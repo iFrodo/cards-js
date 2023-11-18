@@ -10,6 +10,9 @@ let cardInfo = document.createElement('div')
 let cardLogo = document.createElement('img')
 let cardNumber = document.createElement('p')
 let cardExpiration = document.createElement('p')
+let transactionTitle = document.createElement('h2')
+let transactionList = document.createElement('ul')
+let transactionItem = document.createElement('li')
 
 container.classList.add('container')
 card.classList.add('card')
@@ -22,6 +25,9 @@ cardInfo.classList.add('card-info')
 cardLogo.classList.add('card-logo')
 cardNumber.classList.add('card-number')
 cardExpiration.classList.add('card-expiration')
+transactionTitle.classList.add('transaction-title')
+transactionList.classList.add('transaction-list')
+transactionItem.classList.add('transaction-item')
 
 
 document.querySelector('.root').appendChild(container)
@@ -35,6 +41,9 @@ document.querySelector('.card-block').appendChild(cardInfo)
 document.querySelector('.card-info').appendChild(cardLogo)
 document.querySelector('.card-info').appendChild(cardNumber)
 document.querySelector('.card-info').appendChild(cardExpiration)
+document.querySelector('.transaction-block').appendChild(transactionTitle)
+document.querySelector('.transaction-block').appendChild(transactionList)
+document.querySelector('.transaction-list').appendChild(transactionItem)
 
 
 
